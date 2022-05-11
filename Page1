@@ -1,0 +1,47 @@
+import React from 'react';
+import { Text, StyleSheet ,View} from 'react-native';
+
+const TheTextTag = () => {
+  return (
+  <View>
+    <Text style={styles.heading}>Hello, Welcome Back!</Text>
+    <Text style={styles.loginheading} >Login to your account </Text>
+   
+    <Text style={styles.username} >Username</Text>
+    </View>
+    
+  );
+}
+
+export default TheTextTag;
+     
+
+const styles = StyleSheet.create({
+  
+  heading: {
+    paddingTop: 100,
+    margin: 24,
+    fontSize: 40,
+    color:`#4b0082`,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    },
+   loginheading: {
+    paddingTop: 5,
+    margin: 24,
+    fontSize: 18,
+   color:`#9932cc`,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    },
+    
+    username: {
+    paddingTop:15,
+    margin:10,
+    fontSize: 12,
+   color:`#9932cc`,
+    fontWeight: 'bold',
+    textAlign: 'left',
+    
+  },
+});
