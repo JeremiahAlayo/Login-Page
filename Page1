@@ -1,24 +1,33 @@
-import React from 'react';
-import { Text, StyleSheet ,View} from 'react-native';
+import React from "react";
+import { Text, StyleSheet, TextInput, View } from 'react-native';
 
 const TheTextTag = () => {
   return (
   <View>
     <Text style={styles.heading}>Hello, Welcome Back!</Text>
     <Text style={styles.loginheading} >Login to your account </Text>
-   
-    <Text style={styles.username} >Username</Text>
-    </View>
     
-  );
-}
-
-export default TheTextTag;
-     
-
+      <TextInput style={styles.username}>
+        Username </TextInput>
+     <TextInput style={styles.password}>
+        password 
+      </TextInput>
+      <Text style={styles.rememberme}>Remember Me</Text>
+      
+      <Text style={styles.forgetpassword}> Forget Password</Text>
+      
+      <Text style={styles.signin}> SIGN IN</Text>
+      
+      </View>
+     );
+    }
+ export default TheTextTag;
+  
+    
+  
 const styles = StyleSheet.create({
   
-  heading: {
+  heading:{
     paddingTop: 100,
     margin: 24,
     fontSize: 40,
@@ -35,13 +44,45 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     },
     
-    username: {
+     username: {
     paddingTop:15,
     margin:10,
     fontSize: 12,
    color:`#9932cc`,
     fontWeight: 'bold',
     textAlign: 'left',
-    
+    },
+   
+  password: {
+    margin: 10,
+    fontSize: 12,
+    fontWeight: 'bold',
+    color:`#9932cc`,
+    textAlign: 'left',
+    paddingTop: 15,
   },
+ 
+ rememberme:{
+    paddingTop: 10,
+    margin: 24,
+    fontSize: 8,
+    
+    fontWeight: 'bold',
+    textAlign: 'left',
+    },
+    
+    forgetpassword:{
+    paddingDown: 0,
+    margin: 20,
+    fontSize: 8,
+    
+    fontWeight: 'bold',
+    textAlign: 'middle',
+    },
+ 
 });
+
+
+
+  
+
